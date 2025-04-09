@@ -31,9 +31,9 @@ app.get('/health', (req, res) => {
 
 // For any request that doesn't match an API route or static file,
 // serve the React app's index.html
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../public/index.html'));
+// });
 
 const PORT = process.env.PORT || 5000;
 
