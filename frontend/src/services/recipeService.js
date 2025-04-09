@@ -2,6 +2,7 @@
 // import { useAuth } from '../context/AuthContext';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+console.log('API_URL:', API_URL); // Debug log to see what value is being used
 
 // Create a function to get the auth token
 const getAuthToken = () => {
