@@ -1,7 +1,7 @@
 // Remove the useAuth import since it can't be used in a non-component file
 // import { useAuth } from '../context/AuthContext';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = process.env.API_URL || 'http://localhost:8000';
 
 // Create a function to get the auth token
 const getAuthToken = () => {
